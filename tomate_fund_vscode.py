@@ -1921,7 +1921,6 @@ if __name__ == '__main__':
     print("=========================================================")
     app.run(host='0.0.0.0', port=5000, debug=True) 
     if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=5000, debug=True)
     git config --global user.name "julism"
     git config --global user.email "julism@gmail.com"
     git config --global --list
