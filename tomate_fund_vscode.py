@@ -1,17 +1,5 @@
-# -*- coding: utf-8 -*-
-#
 # SISTEMA TOMATE FUND - API COMPLETA EM PYTHON (FLASK)
 # Versão 3.0 - Com CRUD de Fundos e Relatórios Personalizados
-#
-# Este arquivo contém a lógica de negócios, a API Flask e a interface web (HTML/CSS/JS)
-# para facilitar a execução e demonstração.
-#
-# Para executar:
-# 1. Instale as dependências: pip install Flask flask-cors
-# 2. Execute: python tomate_fund_system_final.py
-# 3. Acesse: http://localhost:5000 no seu navegador
-#
-
 from flask import Flask, jsonify, request, Blueprint, send_from_directory
 from flask_cors import CORS
 from datetime import datetime, timedelta
@@ -1909,18 +1897,10 @@ app.register_blueprint(tomate_fund_bp, url_prefix='/api')
 def serve_index():
     """Serve a página HTML principal"""
     return HTML_CONTENT
-
-if __name__ == '__main__':
-    # Para rodar localmente, use: python tomate_fund_system_final.py
-    # O host '0.0.0.0' permite acesso externo no ambiente sandbox
+  if __name__ == '__main__':
     print("=========================================================")
     print("🍅 SISTEMA TOMATE FUND - API + FRONT-END (v3.0) 🍅")
     print("=========================================================")
-    print("Para executar, instale: pip install Flask flask-cors")
     print("Acesse no navegador: http://localhost:5000")
     print("=========================================================")
-    app.run(host='0.0.0.0', port=5000, debug=True) 
-    if __name__ == "__main__":
-    git config --global user.name "julism"
-    git config --global user.email "julism@gmail.com"
-    git config --global --list
+    app.run(host='0.0.0.0', port=5000)
