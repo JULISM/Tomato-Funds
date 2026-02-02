@@ -991,6 +991,7 @@ HTML_CONTENT = """
                 <div class="button-group">
                     <button class="btn btn-secondary" onclick="mostrarFormularioFundo()">➕ Novo Fundo</button>
                     <button class="btn" onclick="listarFundos()">📋 Listar Fundos</button>
+                    <button class="btn btn-secondary" onclick="mostrarSucesso('Funcionalidade Cadastro Ativo em desenvolvimento')">✅ Cadastro Ativo</button>
                 </div>
 
                 <div id="formulario-fundo" style="display: none;">
@@ -1090,7 +1091,6 @@ HTML_CONTENT = """
                 
                 <div class="button-group">
                     <button class="btn btn-secondary" onclick="gerarRelatorioPersonalizado()">📊 Gerar Relatório</button>
-                    <button class="btn" onclick="carregarTemplatesRelatorio()">📋 Ver Templates</button>
                 </div>
             </div>
         </div>
